@@ -1,4 +1,4 @@
-package com.exmple.sunshine.app;
+package com.example.sunshine.app;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,15 +11,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(com.example.sunshine.app.R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(com.example.sunshine.app.R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(com.example.sunshine.app.R.menu.main, menu);
         return true;
     }
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.example.sunshine.app.R.id.action_settings) {
             return true;
         }
 
